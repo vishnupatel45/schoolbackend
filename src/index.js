@@ -9,7 +9,7 @@ app.use(cors());
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
-const connectionstring = 'mongodb+srv://Vishnu45:Vishnupatel4518@cluster0.xeshaz2.mongodb.net/';
+const connectionstring = 'mongodb+srv://Vishnu45:<password>@cluster0.xeshaz2.mongodb.net/';
 
 const storage = multer.diskStorage({
     destination: function (req, file, cb) {
