@@ -12,7 +12,8 @@ app.use(express.json());
 
 require('dotenv').config();
 const password = process.env.MY_SECRET_PASSWORD;
-const connectionstring = `mongodb+srv://Vishnu45:${password}@cluster0.xeshaz2.mongodb.net/`;
+// const connectionstring = `mongodb+srv://Vishnu45:${password}@cluster0.xeshaz2.mongodb.net/`;
+const connectionstring = 'mongodb://localhost:27017';
 
 const storage = multer.diskStorage({
     destination: function (req, file, cb) {
